@@ -1,0 +1,255 @@
+{
+  "employees": [
+    {
+      "id": "1761236163865",
+      "name": "Kittipong",
+      "citizenId": "1234567890123",
+      "role": {
+        "name": "Manager"
+      },
+      "salary": "50000",
+      "permission": {
+        "canView": true,
+        "canEdit": true,
+        "canApprove": true
+      },
+      "startDate": "2025-10-23T23:16",
+      "office": "Manager Office",
+      "desk": 5
+    },
+    {
+      "id": "1761298458419",
+      "name": "Test2",
+      "citizenId": "3456789012345",
+      "role": "PartTime",
+      "salary": "20000",
+      "startDate": "2025-10-24T16:34"
+    },
+    {
+      "id": "1761304804229",
+      "name": "Test3",
+      "citizenId": "3456789012345",
+      "role": "Intern",
+      "salary": "20000",
+      "startDate": "2025-10-24T18:20"
+    },
+    {
+      "id": "1761310000003",
+      "name": "Anan",
+      "citizenId": "1111111111113",
+      "role": "Manager",
+      "salary": "55000",
+      "startDate": "2025-10-22T11:00",
+      "office": "Manager Office",
+      "desk": 12
+    },
+    {
+      "id": "1761310000010",
+      "name": "Malee",
+      "citizenId": "1111111111120",
+      "role": "Manager",
+      "salary": "60000",
+      "startDate": "2025-10-26T09:30",
+      "office": "Manager Office",
+      "desk": 3
+    },
+    {
+      "id": "1761310000013",
+      "name": "Anan2",
+      "citizenId": "1111111111123",
+      "role": "Manager",
+      "salary": "56000",
+      "startDate": "2025-10-22T11:00",
+      "office": "Manager Office",
+      "desk": 9
+    },
+    {
+      "id": "1761310000020",
+      "name": "Malee2",
+      "citizenId": "1111111111130",
+      "role": "Manager",
+      "salary": "61000",
+      "startDate": "2025-10-26T09:30",
+      "office": "Manager Office",
+      "desk": 7
+    },
+    {
+      "id": "1761311744341",
+      "name": "Aum",
+      "citizenId": "1234567890111",
+      "role": "Manager",
+      "salary": "55000",
+      "startDate": "2025-10-20T20:15",
+      "office": "Manager Office",
+      "desk": 14
+    },
+    {
+      "id": "1761305709999",
+      "name": "Test",
+      "citizenId": "3334445556667",
+      "role": "PartTime",
+      "salary": "15000",
+      "startDate": "2025-10-24T18:35"
+    },
+    {
+      "id": "1761298458419",
+      "name": "Test2",
+      "citizenId": "3456789012345",
+      "role": "PartTime",
+      "salary": "20000",
+      "startDate": "2025-10-24T16:34"
+    },
+    {
+      "id": "1761304804229",
+      "name": "Test3",
+      "citizenId": "3456789012345",
+      "role": "Intern",
+      "salary": "20000",
+      "startDate": "2025-10-24T18:20"
+    },
+    {
+      "id": "1761305709999",
+      "name": "Test",
+      "citizenId": "3334445556667",
+      "role": "PartTime",
+      "salary": "15000",
+      "startDate": "2025-10-24T18:35"
+    },
+    {
+      "id": "1761310000001",
+      "name": "Somchai",
+      "citizenId": "1111111111111",
+      "role": "Intern",
+      "salary": "18000",
+      "startDate": "2025-10-20T09:00"
+    },
+    {
+      "id": "1761310000002",
+      "name": "Somsri",
+      "citizenId": "1111111111112",
+      "role": "PartTime",
+      "salary": "20000",
+      "startDate": "2025-10-21T10:00"
+    },
+    {
+      "id": "1761310000004",
+      "name": "Arthit",
+      "citizenId": "1111111111114",
+      "role": "Intern",
+      "salary": "17000",
+      "startDate": "2025-10-23T08:30"
+    },
+    {
+      "id": "1761310000005",
+      "name": "Chai",
+      "citizenId": "1111111111115",
+      "role": "PartTime",
+      "salary": "20000",
+      "startDate": "2025-10-23T14:00"
+    },
+    {
+      "id": "1761310000006",
+      "name": "Kanya",
+      "citizenId": "1111111111116",
+      "role": "Intern",
+      "salary": "18000",
+      "startDate": "2025-10-24T09:15"
+    },
+    {
+      "id": "1761310000007",
+      "name": "Pong",
+      "citizenId": "1111111111117",
+      "role": "PartTime",
+      "salary": "21000",
+      "startDate": "2025-10-24T11:45"
+    },
+    {
+      "id": "1761310000008",
+      "name": "Nisa",
+      "citizenId": "1111111111118",
+      "role": "Intern",
+      "salary": "17500",
+      "startDate": "2025-10-25T08:50"
+    },
+    {
+      "id": "1761310000009",
+      "name": "Vichai",
+      "citizenId": "1111111111119",
+      "role": "PartTime",
+      "salary": "22000",
+      "startDate": "2025-10-25T13:20"
+    },
+    {
+      "id": "1761310000011",
+      "name": "Somchai2",
+      "citizenId": "1111111111121",
+      "role": "Intern",
+      "salary": "18500",
+      "startDate": "2025-10-20T09:00"
+    },
+    {
+      "id": "1761310000012",
+      "name": "Somsri2",
+      "citizenId": "1111111111122",
+      "role": "PartTime",
+      "salary": "21000",
+      "startDate": "2025-10-21T10:00"
+    },
+    {
+      "id": "1761310000014",
+      "name": "Arthit2",
+      "citizenId": "1111111111124",
+      "role": "Intern",
+      "salary": "17500",
+      "startDate": "2025-10-23T08:30"
+    },
+    {
+      "id": "1761310000015",
+      "name": "Chai2",
+      "citizenId": "1111111111125",
+      "role": "PartTime",
+      "salary": "20500",
+      "startDate": "2025-10-23T14:00"
+    },
+    {
+      "id": "1761310000016",
+      "name": "Kanya2",
+      "citizenId": "1111111111126",
+      "role": "Intern",
+      "salary": "18200",
+      "startDate": "2025-10-24T09:15"
+    },
+    {
+      "id": "1761310000017",
+      "name": "Pong2",
+      "citizenId": "1111111111127",
+      "role": "PartTime",
+      "salary": "21500",
+      "startDate": "2025-10-24T11:45"
+    },
+    {
+      "id": "1761310000018",
+      "name": "Nisa2",
+      "citizenId": "1111111111128",
+      "role": "Intern",
+      "salary": "17800",
+      "startDate": "2025-10-25T08:50"
+    },
+    {
+      "id": "1761310000019",
+      "name": "Vichai2",
+      "citizenId": "1111111111129",
+      "role": "PartTime",
+      "salary": "22200",
+      "startDate": "2025-10-25T13:20"
+    },
+    {
+      "id": "1761837627461",
+      "name": "momo",
+      "citizenId": "1122334455667",
+      "role": "PartTime",
+      "salary": "20000",
+      "startDate": "2025-10-30T15:20:27.461Z"
+    }
+  ]
+}
