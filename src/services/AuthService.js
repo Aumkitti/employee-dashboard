@@ -1,6 +1,3 @@
-// src/services/AuthService.js
-
-
 const API_URL = "http://localhost:3001/employees";
 import axios from "axios";
 
@@ -10,7 +7,6 @@ class AuthService {
     const response = await axios.get(API_URL);
     const employees = response.data;
 
-    // ตรวจสอบว่า name กับ citizenId ตรงกันไหม
     const user = employees.find(
       (emp) =>
         emp.name.toLowerCase() === username.toLowerCase() &&

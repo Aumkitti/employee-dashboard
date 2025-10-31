@@ -5,6 +5,7 @@ export default class Permission {
         Manager: { canView: true, canEdit: true, canApprove: true },
         Intern: { canView: true, canEdit: false, canApprove: false },
         PartTime: { canView: true, canEdit: false, canApprove: false },
+        PermanentEmployee: { canView: true, canEdit: true, canApprove: false },
       };
       Object.assign(this, rolePermissions[input] || {});
     } else {

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [showModal, setShowModal] = useState(false);
   const [fullUser, setFullUser] = useState(null);
 
-  const profileRef = useRef(null); // ✅ ref สำหรับ dropdown
+  const profileRef = useRef(null);
 
   const handleLogout = () => {
     AuthService.logout();
@@ -27,7 +27,6 @@ export default function Navbar() {
     }
   };
 
-  // ✅ ฟัง event click บน document เพื่อตรวจสอบ click นอก dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (profileRef.current && !profileRef.current.contains(event.target)) {
@@ -67,7 +66,7 @@ export default function Navbar() {
 
           {showProfile && (
             <div
-              ref={profileRef} // ✅ เพิ่ม ref
+              ref={profileRef}
               className="absolute right-0 top-12 bg-white border border-gray-100 rounded-2xl shadow-lg w-72 p-4 
                 animate-fadeIn z-50 transition-all"
             >

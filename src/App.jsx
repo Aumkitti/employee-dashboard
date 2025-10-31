@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import EmployeeDirectory from "./pages/EmployeeDirectory";
@@ -7,13 +6,14 @@ import Login from "./pages/Login";
 import HomeRedirect from "./pages/HomeRedirect";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./components/Layout";
+import OfficeChart from "./pages/OfficeChart";
+
 
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-
         <Route path="/" element={<HomeRedirect />} />
 
         <Route
@@ -48,6 +48,18 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route
+          path="/officechart"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <OfficeChart />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+
       </Routes>
     </Router>
   );

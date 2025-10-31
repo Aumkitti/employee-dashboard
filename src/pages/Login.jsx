@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Lock, User, CheckCircle2, XCircle } from "lucide-react";
@@ -38,9 +37,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-50 to-blue-100 relative">
-      {/* Login Card */}
       <div className="w-[900px] h-[520px] bg-white rounded-3xl shadow-2xl overflow-hidden flex">
-        {/* Left Section */}
         <div className="w-1/2 bg-blue-800 text-white flex flex-col items-center justify-center p-10">
           <div className="text-5xl font-bold tracking-wide mb-3 animate-fadeIn">
             EMP
@@ -54,14 +51,12 @@ export default function Login() {
           </p>
         </div>
 
-        {/* Right Section (Login Form) */}
         <div className="w-1/2 flex flex-col justify-center p-10">
           <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
             เข้าสู่ระบบ
           </h2>
 
           <form onSubmit={handleLogin} className="flex flex-col gap-6">
-            {/* Username Field */}
             <div className="relative group">
               <User
                 className="absolute left-3 top-3.5 text-gray-400"
@@ -93,7 +88,6 @@ export default function Login() {
               </label>
             </div>
 
-            {/* Password Field */}
             <div className="relative group">
               <Lock
                 className="absolute left-3 top-3.5 text-gray-400"
@@ -140,7 +134,6 @@ export default function Login() {
         </div>
       </div>
 
-      {/* Modal Notification */}
       {modal.show && (
         <div className="fixed inset-0 bg-white/30 flex items-center justify-center z-50 animate-fadeIn">
           <div className="bg-white w-[340px] p-6 rounded-2xl shadow-2xl text-center animate-slideUp">

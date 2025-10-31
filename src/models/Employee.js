@@ -1,4 +1,3 @@
-//models/Employee.js
 export default class Employee {
   constructor({
     id,
@@ -22,10 +21,8 @@ export default class Employee {
     );
     this.citizenId = citizenId ?? "";
 
-    // เพิ่ม office และ desk
     this.office =
       office || (this.role?.name === "Manager" ? "Manager Office" : "-");
-    // สุ่มโต๊ะสำหรับ Manager (1-20)
     this.desk =
       desk ||
       (this.role?.name === "Manager"

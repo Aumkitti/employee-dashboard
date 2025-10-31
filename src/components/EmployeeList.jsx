@@ -22,7 +22,7 @@ const EmployeeList = () => {
   const tableContainerRef = useRef(null);
 
   const user = AuthService.getCurrentUser();
-  const canEdit = user?.role === "Manager" || user?.role === "PartTime";
+  const canEdit = user?.role === "Manager";
 
   useEffect(() => {
     fetchEmployees();
@@ -105,7 +105,6 @@ const EmployeeList = () => {
     <div className="w-full max-w-full relative">
       {!isFormVisible ? (
         <>
-          {/* Header */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
             <h1 className="text-3xl font-bold text-gray-800">จัดการพนักงาน</h1>
             <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
@@ -146,7 +145,6 @@ const EmployeeList = () => {
             </div>
           </div>
 
-          {/* Table */}
           <div
             ref={tableContainerRef}
             className="bg-white/80 backdrop-blur-md rounded-3xl shadow-lg border border-blue-100 overflow-hidden h-195"
@@ -218,7 +216,6 @@ const EmployeeList = () => {
             </table>
           </div>
 
-          {/* Pagination */}
           <div className="flex justify-center mt-4 gap-2">
             {Array.from({ length: totalPages }, (_, i) => (
               <button
@@ -243,7 +240,6 @@ const EmployeeList = () => {
         />
       )}
 
-      {/* Delete Modal */}
       {deleteModal.visible && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black/30 transition-opacity">
           <div className="bg-white rounded-2xl p-6 w-96 transform transition-transform duration-300 scale-100 animate-fadeIn">

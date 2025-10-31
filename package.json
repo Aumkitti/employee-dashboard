@@ -20,6 +20,7 @@
     "react-dom": "^19.1.1",
     "react-flatpickr": "^4.0.11",
     "react-modern-calendar-datepicker": "^3.1.6",
+    "react-organizational-chart": "^2.2.1",
     "react-router-dom": "^7.9.4",
     "recharts": "^3.3.0"
   },

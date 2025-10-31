@@ -1,4 +1,3 @@
-// src/components/EmployeeDirectory.jsx
 import React, { useEffect, useState, useRef } from "react";
 import EmployeeService from "../services/EmployeeService";
 import { formatDate } from "../utils/FormatUtils";
@@ -59,20 +58,31 @@ export default function EmployeeDirectory() {
     ...new Set(employees.map((e) => e.role?.name).filter(Boolean)),
   ];
 
-  // ฟังก์ชันช่วยกำหนด Contact
+  const getPermanentOfficeDesk = (emp) => {
+    const offices = ["Frontend", "Backend", "UX/UI"];
+    if (!emp.office || !emp.desk || emp.office === "-" || emp.desk === "-") {
+      const office = offices[Math.floor(Math.random() * offices.length)];
+      const desk = Math.floor(Math.random() * 20) + 1;
+      emp.office = office;
+      emp.desk = desk;
+    }
+    return `ห้องทำงาน: ${emp.office} / โต๊ะ: ${emp.desk}`;
+  };
+
   const getContactInfo = (emp) => {
     if (!emp.role?.name) return "-";
+
     if (emp.role.name === "Manager") {
       return `ห้องทำงาน: ${emp.office} โต๊ะ: ${emp.desk}`;
+    } else if (emp.role.name === "PermanentEmployee") {
+      return getPermanentOfficeDesk(emp);
     } else {
       return "ติดต่อผ่านหัวหน้างานเท่านั้น";
     }
   };
 
-
   return (
     <div className="w-full max-w-full">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-2">
         <h1 className="text-3xl font-bold text-gray-800">
           รายชื่อพนักงานทั้งหมด
@@ -93,7 +103,6 @@ export default function EmployeeDirectory() {
             />
           </div>
 
-          {/* Role Filter */}
           <select
             value={selectedRole}
             onChange={(e) => setSelectedRole(e.target.value)}
@@ -106,7 +115,6 @@ export default function EmployeeDirectory() {
             ))}
           </select>
 
-          {/* Date Filter */}
           <input
             type="date"
             value={startDate}
@@ -122,7 +130,6 @@ export default function EmployeeDirectory() {
         </div>
       </div>
 
-      {/* ตาราง */}
       <div
         className="bg-white/80 backdrop-blur-md rounded-3xl shadow-lg border border-blue-100 overflow-hidden h-190"
         ref={tableRef}
@@ -163,7 +170,6 @@ export default function EmployeeDirectory() {
         </table>
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center mt-4 gap-2">
           {Array.from({ length: totalPages }, (_, i) => (

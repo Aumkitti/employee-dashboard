@@ -1,13 +1,11 @@
-// src/services/employeeservice.js
 import axios from "axios";
 import Role from "../models/Role";
 import Permission from "../models/Permission";
-import Employee from "../models/Employee";
 import {
   Manager,
   Intern,
   PartTime,
-  RegularEmployee,
+  PermanentEmployee,
 } from "../models/EmployeeTypes";
 
 
@@ -33,7 +31,7 @@ class EmployeeService {
           employeeInstance = new PartTime({ ...e, role, permission });
           break;
         default:
-          employeeInstance = new RegularEmployee({ ...e, role, permission });
+          employeeInstance = new PermanentEmployee({ ...e, role, permission });
       }
 
       employeeInstance.bonus = employeeInstance.calculateBonus();

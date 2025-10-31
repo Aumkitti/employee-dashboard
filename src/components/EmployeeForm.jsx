@@ -1,4 +1,3 @@
-// src/components/EmployeeForm.jsx
 import React, { useState, useEffect } from "react";
 import EmployeeService from "../services/EmployeeService";
 import Flatpickr from "react-flatpickr";
@@ -99,10 +98,11 @@ const EmployeeForm = ({ selectedEmployee, onSave, onCancel }) => {
           onChange={handleChange}
           className="w-full border border-gray-200 rounded-xl px-3 py-2 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-blue-400 transition"
         >
-          <option value="">-- เลือกตำแหน่ง --</option>
+          <option value=""> เลือกตำแหน่ง </option>
           <option value="Manager">Manager</option>
-          <option value="Intern">Intern</option>
           <option value="PartTime">Part-Time</option>
+          <option value="Intern">Intern</option>
+          <option value="PermanentEmployee">Permanent Employee</option>
         </select>
       </div>
 
